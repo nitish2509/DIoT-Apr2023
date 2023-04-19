@@ -1,0 +1,100 @@
+HTML - Hyper Text Markup language
+
+Tags:
+
+<html>
+<head>
+<body>
+Header tags: <h1>, <h2>, <h3>....<h6>
+<br> - line break
+<p>
+<hr> - horizontal ruler
+<b><u><i>
+<ol> - Ordered List
+<ul> - Unordered List
+<li> - List Item
+<table>, 
+<tr> - Table Row
+<td> - Table Data
+<a> - anchor
+
+<a href="url"> Link text </a>
+
+<b>, <i>, <u>, <sup>, <sub>, <strikeout>, <font>, <em>, <tt>, 
+
+atrributes:
+mandatory or optional
+<tag attrib1=value1  attrib2=value2>
+<img src="a.gif" height=100>
+
+HTML 4:
+3 container tags:
+<p>
+<div>
+<span>
+
+9+3 HTML form elements:
+<input type= ? >
+
+Text-based:
+- text
+- password
+- hidden
+
+Button-based:
+- button
+- submit
+- reset
+
+Misc-based:
+- radio
+- checkbox
+- file
+
+- <textarea>
+- <select> with <option>
+- <button type="submit">
+
+HTML comment : 
+<!--  comment   -->
+
+
+HTML5:
+Form elements: 9 + 13 <input type=?>
+
+Attributes:16 new form attributes:
+
+<input type="text"
+       name="username" 
+       value="Shrilata"
+       maxlength="10">
+
+
+- required
+- autofocus
+- placeholder=value
+- min
+- max
+- pattern
+- title
+
+
+Form elements:
+- email
+- number
+- range
+- date
+- color
+- tel
+- url
+- search
+
+<audio src>
+<video src>
+<img src>
+
+
+
+
+
+

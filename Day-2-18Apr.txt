@@ -1,0 +1,71 @@
+HTML5 Layout elements:
+<header>, <footer>, <section>, <article>, <aside>
+
+CSS - Cascading Style Sheets
+
+MIME type:
+text/plain
+text/html
+text/css
+image/gif
+image/jpg
+image/png
+audio/mp3
+video/mp4
+application/ms-word
+
+
+inline vs block element HTML:
+
+eg of block elements : Hn tags, p, div
+eg of inline elements: <input>, span, 
+
+Reasons for JS :
+- client side validation
+- event handling
+- DOM manipulation
+
+
+
+3 places to put JS:
+- <body>
+- <head>
+- external file (.js)
+
+JS ver 5
+
+JS is a loosely typed language
+
+var i = 10;  //number
+var j = 10.25;  //number
+var str = "Hello";
+var flag = true;
+var a;
+
+i, typeof(i)  10, number
+
+
+Data Types:
+number, string, boolean, undefined, null
+
+int add(int a , int b){..}
+
+def add(a, b):
+    
+
+functions:
+- user def function
+- built-in/pre-defined  function
+
+parseInt(), parseFloat(), isFinite(), isNaN()
+
+
+
+
+
+
+
+
+
+
+
