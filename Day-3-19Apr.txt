@@ -1,0 +1,224 @@
+Scopes of var:
+- Local
+- Global
+
+<script>
+        var a = 100;  //global
+
+         function f1(){
+            var b = 200;
+            console.log("in f1() : Local var b ", b)
+            console.log("in f1() : Global var a ", a)
+         }
+         f1()
+         console.log("outside f1() : Local var b ", b)
+         console.log("outside f1() : Global var a ", a)
+         
+       </script>
+
+-----------------------------
+
+function expression
+<script>
+
+            //function expression
+            var i = 10;
+            var j = "hello";
+            var k = i/10*5+800;
+
+            //var f = function(){...}//anon func
+
+            function greet(){   //named function
+                document.writeln("Hello World")
+            }
+
+            greet()
+
+            var greet1 = function(){
+                document.writeln("Hello World1")
+            }
+
+            greet1()
+
+            function greetUser(username){
+                document.writeln("Hello " + username)
+            }
+            greetUser("Sonali")
+
+            var greetUser1 = function(uname){
+                document.writeln("Hello " + uname)
+            }
+
+            greetUser1("Rajlakshmi")
+
+            function add(a, b){
+                return a + b;
+            }
+            document.writeln("Sum is " + add(10,20))
+
+            var add1 = function(a, b){
+                return a + b;
+            }
+            document.writeln("Sum is " + add1(22,33))
+
+        </script>
+
+
+-----------------------------------------
+
+Objects:
+- pre defined Objects
+- User defined Objects
+
+Rules:
+- Every object in JS exposes Properties and methods
+- Every property is read/write
+
+Pre defined Objects
+- string, math, date, array, number, boolean, regexp.....
+
+String :
+
+
+obj.property
+obj.method()
+
+
+slice()
+subString()
+substr()
+
+
+getXXX()
+setXXX()
+
+<script>
+         var today = new Date()
+         document.write(today + "<br>")
+         document.write(today.getDate() + "<br>")
+         document.write(today.getMonth() + "<br>")
+         document.write(today.getDay() + "<br>")
+         document.write(today.getFullYear() + "<br>")
+         document.write(today.getHours() + "<br>")
+         document.write(today.getTime() + "<br>")
+
+         today.setDate(25)
+         today.setFullYear(2025)
+         today.setMonth(8)
+         document.write(today + "<br>")
+
+       </script>
+
+-----------------------------
+
+int arr[10];
+arr[0] = 10;
+arr[1] = 55;
+
+
+
+User defined Objects - 5 techniques:
+- Object initializer
+- Using JS class
+- Function constructor
+- Object class
+
+
+Rules for lambda:
+() => stmt-1
+() => {
+        stmt-1;
+        stmt-1;
+      }
+arg => stmt-1
+(arg1, arg2, arg3) => stmt-1
+     
+
+---------- class -------------
+<script>
+         class Greeter{
+            greet(){
+                document.write("Hello World!!<br>")
+            }
+         }
+         var g1 = new Greeter();
+         g1.greet()
+        
+
+
+         class Student{
+            constructor(rollno, sname){
+                this.rollno = rollno;
+                this.sname = sname;
+            }
+            displayDetails(){
+                document.writeln("Rollno : " + this.rollno)
+                document.writeln("Student name : " + this.sname + "<br>")
+            }
+         }
+         var s1 = new Student(101,"Apeksha")
+         
+
+         class GradStudent extends Student{
+            constructor(rollno, sname, gpa){
+                super(rollno, sname)
+                this.gpa = gpa
+            }
+
+            displayGSDetails(){
+                super.displayDetails()
+                document.writeln("Student GPA : " + this.gpa + "<br>")
+            }
+         }
+         var gs1 = new GradStudent(111,"Aaaa", 9.7);
+         gs1.displayGSDetails()
+
+       </script>
+
+------------- Object initializer --------------
+
+<script>
+         //Object initializer
+         //JSON : Javascript Object Notation
+         var stud = {
+            rollno : 101, 
+            name:"Nitish"
+        }
+         console.log(stud.rollno, stud.name)
+
+         stud.name = "Nikhil"
+         console.log(stud.rollno, stud.name)
+
+         var person = {
+            pname : "Apeksha",
+            age : 22.3,
+            vaccinated : true,
+            hobbies : ["Coding","Eating", "Reading", "Netflixing"],
+            address : {city:"Pune", state : "Mah"}
+         }
+         console.log(person.pname, person.age, person.vaccinated)
+         console.log(person.hobbies[1])
+         console.log(person.address.state)
+
+
+         var book = {
+            bookid : 1001,
+            bname : "Core Java",
+            author : "Kishori S",
+            price : 400,
+            incrPrice : function(amount){
+                this.price = this.price + amount
+            },
+            display : function(){
+                console.log(this.bookid, this.bname, this.author, this.price)
+            }
+         }
+         book.display()
+         book.incrPrice(100)
+         book.display()
+         
+
+       </script>
+
+
+
