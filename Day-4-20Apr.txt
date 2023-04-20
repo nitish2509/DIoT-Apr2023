@@ -1,0 +1,132 @@
+setInterval(func(), int)
+
+setTimeout(func, interval)
+
+<script>
+        var i = 1
+         setInterval(()=>{
+            console.log("i",i)
+            i++
+         }, 1000)
+       </script>
+--------------
+
+innerHTML
+
+<head>
+        <script>
+            function f1(){
+              var plist = document.getElementsByTagName("p")
+              for(i=0; i< plist.length; i++)
+                 plist[i].style.color = "red"
+                 //plist[i].innerHTML = "New Content"
+            }
+         </script>
+    </head>
+    <body>
+       <h1>This is header-1</h1>
+       <p>This is para-1</p>
+       <p>This is para-2</p>
+       <p>This is para-3</p>
+       <p>This is para-4</p>
+       <input type="button" value="change" onclick="f1()"
+       
+
+onclick()
+onmouseover()
+onmouseout()
+
+----------------- form validation -----------
+<html>
+    <head>
+        <script>
+            function validateName(){
+                var str = document.getElementById("uname").value
+                if(str == null || str == ""){
+                  document.getElementById("s1").innerHTML = ("username is required")
+                  return false;
+                }
+                else if(str.length < 5){
+                    document.getElementById("s1").innerHTML = ("Username must be min 5 chars")
+                    return false;
+                }
+                else return true;
+            }
+
+            function validatePassword(){
+                var str = document.getElementById("pass").value
+                if(str == null || str == ""){
+                    document.getElementById("s2").innerHTML =  ("password is required")
+                  return false;
+                }
+                else if(str.length < 8){
+                    document.getElementById("s2").innerHTML = ("password must be min 8 chars")
+                    return false;
+                }
+                else return true;
+            }
+
+            function validate(){
+                if(validateName() && validatePassword())
+                  return true;
+                  else 
+                     return false;
+            }
+        </script>
+    </head>
+    <body>
+       <form onsubmit="return validate()">
+         Name : <input type="text" id="uname"> <span id="s1" style="color:red"></span><br>
+         Password : <input type="password" id="pass"> <span id="s2" style="color:red"></span><br>
+         <input type="submit">
+       </form> 
+    </body>
+</html>
+
+---------------- field level validation ----------------
+<html>
+    <head>
+        <script>
+            function validateName(){
+                var str = document.getElementById("uname").value
+                if(str.length < 5){
+                    document.getElementById("s1").innerHTML = ("Username must be min 5 chars")
+                    document.getElementById("uname").focus()
+                }
+            }
+
+            function validatePassword(){
+                var str = document.getElementById("pass").value
+                if(str.length < 8){
+                    document.getElementById("s2").innerHTML = ("password must be min 8 chars")
+                   
+                }
+            }
+        </script>
+    </head>
+    <body>
+       <form >
+         Name : <input type="text" id="uname" onchange="validateName()"> 
+                <span id="s1" style="color:red"></span>
+                <br>
+         Password : <input type="password" id="pass" onchange="validatePassword()"> 
+                    <span id="s2" style="color:red"></span>
+                    <br>
+         <input type="button" value="login">
+       </form> 
+    </body>
+</html>
+
+
+<tag>    </tag>
+
+
+
+
+JS : XML HTTP Request  (XHR)
+
+
+
+
+
+
