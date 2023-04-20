@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <script>
+	     function f1(){
+		    var str = "";
+			var plist = document.getElementsByName("c1");
+			for(i=0;i<plist.length;i++){
+			    if(plist[i].checked)
+				   str = plist[i].value + "&nbsp;&nbsp;" + str ;
+			}
+			document.getElementById("s1").innerHTML = "Skills : " + str;
+		 }
+	  </script>
+   </head>
+   <body>
+     <H1> Welcome to Javascript </H1>
+	   Skills:
+	   <input type="checkbox" name="c1" value="java">Java
+	   <input type="checkbox" name="c1" value="JS">JavaScript
+	   <input type="checkbox" name="c1" value="JSP">JSP
+	   
+	   <input type="button" value="click" onclick="f1()"><br>
+	   <span id="s1"></span>
+   </body>
+
+</html>
