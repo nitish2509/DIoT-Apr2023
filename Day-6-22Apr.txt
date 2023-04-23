@@ -1,0 +1,91 @@
+Web App : app available over the net
+- human centric
+- HTTP response (HTMl)
+
+Web Service: service available over the net
+- application centric
+- Data (JSON, XML, plain text)
+
+Webservice:
+- SOAP-based WS (heavy weight WS), B2B, UDDI, WSDL, SOAP
+- RESTful WS
+
+
+
+
+1) URL/URI
+- static URL
+
+http://www.someserver.com/myapp/images/sun.gif
+http://www.someserver.com/myapp/welcome.html
+http://www.someserver.com/myapp/myaudio.wav
+
+
+- Dynamic URL
+ action/verb-based
+
+http://www.techarticles.com/articles/getArticle?id=12345
+http://www.techarticles.com/articles/delArticle?id=2000
+http://www.techarticles.com/articles/updateArticle?id=2000
+http://www.techarticles.com/articles/createArticle
+
+
+2) Restful URL: 
+noun-based/resource-based
+
+http://www.techarticles.com/articles/article?id=12345   GET
+http://www.techarticles.com/articles/article?id=12345   DELETE
+http://www.techarticles.com/articles/article?id=12345   PUT
+http://www.techarticles.com/articles  POST
+
+
+http://www.techarticles.com/articles/article?id=12345
+http://www.techarticles.com/articles/article/12345
+
+
+
+3) HTTP methods  (W3Cg)
+- get  - READ
+- post - CREATE
+- put  - UPDATE
+- delete - DELETE
+
+CRUD - Create Read Update Delete
+
+- head
+- trace
+- options
+...
+
+
+4) 
+REST - REpresentational State Transfer
+
+
+
+
+http://localhost:3000/
+http://localhost:3000/greet
+http://localhost:3000/studNames
+
+http://localhost:3000/studInfo
+
+file:///D:/diot-2023/MyExpressApp/second.html?t1=shrilata&t2=secret#
+
+http://localhost:3000/processlogin
+
+
+http://localhost:3000/
+
+
+
+
+
+
+
+
+
+
+
+
+
